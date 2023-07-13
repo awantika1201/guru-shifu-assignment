@@ -8,14 +8,14 @@ import static org.hamcrest.Matchers.is;
 
 import org.junit.jupiter.api.Test;
 
-public class rectangleTest {
+public class RectangleTest {
 
    
 
     @Test
-    void shouldReturnAreaOfRectangle(){
+    void shouldReturnAreaWhenLengthAndBreadthIsProvided(){
         Rectangle rectangle=new Rectangle(10,12);
-        int area=rectangle.calculateArea();
+        int area=rectangle.area();
         assertThat(area,is(equalTo(120)));
 
     }
