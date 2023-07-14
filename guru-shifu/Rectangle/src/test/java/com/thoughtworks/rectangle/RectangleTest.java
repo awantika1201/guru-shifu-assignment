@@ -20,5 +20,13 @@ public class RectangleTest {
 
     }
 
+
+    @Test
+    void shouldReturnPerimeterWhenLengthAndBreadthIsProvided(){
+        Rectangle rectangle=new Rectangle(10.0,12.0);
+        double perimeter=rectangle.perimeter();
+        assertThat(perimeter,is(closeTo(44.0,0.001)));
+    }
+
     
 }
