@@ -15,8 +15,11 @@ public class RectangleTest {
     @Test
     void shouldReturnAreaWhenLengthAndBreadthIsProvided(){
         Rectangle rectangle=new Rectangle(10.0,12.0);
-        double area=rectangle.area();
-        assertThat(area,is(closeTo(120.0,0.001)));
+        double expectedArea=120.0;
+
+        double actualArea=rectangle.area();
+
+        assertThat(expectedArea,is(closeTo(actualArea,0.001)));
 
     }
 
@@ -24,8 +27,11 @@ public class RectangleTest {
     @Test
     void shouldReturnPerimeterWhenLengthAndBreadthIsProvided(){
         Rectangle rectangle=new Rectangle(10.0,12.0);
-        double perimeter=rectangle.perimeter();
-        assertThat(perimeter,is(closeTo(44.0,0.001)));
+        double expectedPerimeter=44.0;
+
+        double actualPerimeter=rectangle.perimeter();
+
+        assertThat(expectedPerimeter,is(closeTo(actualPerimeter,0.001)));
     }
 
     
