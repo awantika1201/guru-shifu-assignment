@@ -1,11 +1,11 @@
 package com.thoughtworks.rectangle;
 public class Quadrilateral {
-    private final double length;
-    private final double breadth;
+    private final double LENGTH;
+    private final double BREADTH;
 
     private Quadrilateral(double length, double breadth){
-        this.length=length;
-        this.breadth=breadth;
+        this.LENGTH=length;
+        this.BREADTH =breadth;
     }
 
     public static Quadrilateral createRectangle(double length,double breadth){
@@ -17,10 +17,10 @@ public class Quadrilateral {
     }
 
     public double area(){
-        return length*breadth;
+        return LENGTH* BREADTH;
     }
 
     public double perimeter(){
-        return 2*(length+breadth);
+        return 2*(LENGTH+ BREADTH);
     }
 }
